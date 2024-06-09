@@ -45,7 +45,9 @@
               </li>
             </ul>
           </nav>
-          <button class="nav-button" type="button">Order Now</button>
+          <button type="button" class="nav-button" data-modal-open>
+            Order Now
+          </button>
         </div>
       </div>
     </header>
@@ -63,7 +65,7 @@
               enjoy a hassle-free and delicious meal from the comfort of your
               own home.
             </p>
-            <butoon class="hero-button">Order Now</butoon>
+            <button type="button" class="hero-button">Order Now</button>
           </div>
           <img class="hero-images" src="./images/pizza.png" alt="pizza" />
         </div>
@@ -107,18 +109,30 @@
           <button class="offerings-button">Order Now</button>
         </div>
       </section>
-      <section class="container">
-        <div class="favorites-section">
+      <section class="">
+        <div class="favorites-section container">
           <h2 class="favorites-title">Some of Our Favorites</h2>
           <p class="favorites-text">Looking for something delicious?</p>
         </div>
         <ul class="favorites-list">
-          <li class="favorites-item"><img src="" alt="" /></li>
-          <li class="favorites-item"><img src="" alt="" /></li>
-          <li class="favorites-item"><img src="" alt="" /></li>
-          <li class="favorites-item"><img src="" alt="" /></li>
-          <li class="favorites-item"><img src="" alt="" /></li>
-          <li class="favorites-item"><img src="" alt="" /></li>
+          <li class="favorites-item">
+            <img src="./images/gamburger-min.png" alt="gamburger" />
+          </li>
+          <li class="favorites-item">
+            <img src="./images/Pasta-min.png" alt="pasta" />
+          </li>
+          <li class="favorites-item">
+            <img src="./images/pizza-min.png" alt="pizza" />
+          </li>
+          <li class="favorites-item">
+            <img src="./images/chicken-min.png" alt="chicken" />
+          </li>
+          <li class="favorites-item">
+            <img src="./images/salat-min.png" alt="salat" />
+          </li>
+          <li class="favorites-item">
+            <img src="./images/borshch-min.png" alt="borshch" />
+          </li>
         </ul>
       </section>
       <section class="container">
@@ -138,7 +152,7 @@
             Order now and receive 10% off your first meal with Enjoy Your
             Favorite Food From Anywhere.
           </p>
-          <form action="">
+          <form>
             <input type="text" />
             <button class="subscription-button">Subscribe</button>
           </form>
@@ -170,7 +184,7 @@
               <li class="list-second-item">Cookies Settings</li>
             </ul>
           </div>
-          <form action="">
+          <form>
             <h3>Subscribe</h3>
             <input type="text" />
             <button class="button">Subscribe</button>
@@ -180,5 +194,39 @@
         </div>
       </section>
     </footer>
+    <div class="beckdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          X
+        </button>
+        <p class="modal-title">Order Form</p>
+        <form>
+          <ul class="modal-form-list">
+            <li>
+              <label for="" class="modal-label">Name</label
+              ><input type="text" class="modal-input" placeholder="Your name" />
+            </li>
+            <li>
+              <label for="" class="modal-label">Phone number</label
+              ><input
+                type="text"
+                class="modal-input"
+                placeholder="+38(0_ _) _ _ _   _ _   _ _"
+              />
+            </li>
+            <li>
+              <label for="" class="modal-label">E-mail</label
+              ><input
+                type="text"
+                class="modal-input"
+                placeholder="example@gmail.com"
+              />
+            </li>
+          </ul>
+          <button type="submit" class="modal-send-btn">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
